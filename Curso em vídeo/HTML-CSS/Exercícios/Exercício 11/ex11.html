@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <h1>Exercício para reprodução de de mídias!</h1>
+    <h2>Teste de imagem dinâmica!</h2>  
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/imagem-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/imagem-m.png" type="image/png">
+            <img src="Imagens/imagem-g.png" alt="Imagem dinâmica"><hr>
+        </picture>
+    <h2>Reprodução de áudios!</h2>
+    <h3>Áudio 1:</h3>
+    <p>Ouça o podcast do guanabara!</p>
+    <audio src="audios/guanacast-33.mp3" controls></audio>
+    <h3>Áudio 2:</h3>
+    <p>Ouça uma música relaxante:</p>
+    <audio preload="metadata" controls>
+        <source src="audios/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <p>Se o áudio não estiver tocando, faça o <a href="audios/guanacast-33.mp3" download="happy-mistake" type="audio/mpeg">download</a> clicando aqui.</p><hr>
+    <h3>Reprordução de vídeos!</h3>
+    <p>Vìdeo hospedado localmente:</p>
+    <video width="560" controls poster="Vídeos/limoes-capa.png">
+        <source src="Vídeos/meu-video.mp4" type="video/mp4">
+        <source src="Vídeos/meu-video.webm" type="video/webm">
+        <source src="Vídeos/meu-video.ogv" type="video/ogg">
+    </video>
+    <p>Vídeo hospedado no youtube e incorporado:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ycoRq3dTxx4?si=_I8ZFrdxRZ5_2K8B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
